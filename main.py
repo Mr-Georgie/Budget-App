@@ -74,7 +74,7 @@ class Budget:
 
 
 
-# instantiating 2 objects from the budget class
+# instantiating 3 objects from the budget class
 food_budget = Budget("food")
 clothing_budget = Budget("clothing")
 entertainment_budget = Budget("entertainment")
