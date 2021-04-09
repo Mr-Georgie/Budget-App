@@ -77,10 +77,12 @@ class Budget:
 # instantiating 2 objects from the budget class
 food_budget = Budget("food")
 clothing_budget = Budget("clothing")
+entertainment_budget = Budget("entertainment")
 
-# deposit money into 
+# deposit money into budget categories
 print(food_budget.deposit(2000))
 print(clothing_budget.deposit(5000))
+print(entertainment_budget.deposit(3000))
 
 print(food_budget.withdraw(2500)) # this should return insufficient funds
 print(clothing_budget.withdraw(1000)) # this should return transaction successful
@@ -90,6 +92,7 @@ print(food_budget.get_balance())
 print(clothing_budget.get_balance())
 
 # transfer between categories
+print(entertainment_budget.transfer(200, food_budget))
 print(clothing_budget.transfer(1500, food_budget))
 print(food_budget.transfer(200, clothing_budget))
 
